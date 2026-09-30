@@ -1,0 +1,85 @@
+.header {
+  display: flex;
+  width: auto;
+  height: 6rem;
+  background-color: aqua;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: auto;
+  text-wrap: nowrap;
+  gap: 0.5rem;
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+.header-link {
+  cursor: pointer;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  transition:
+    transform 0.5s ease,
+    filter 0.5s ease,
+    background-color 0.5s ease;
+}
+
+.header-link:hover,
+.header-link:focus-visible {
+  background-color: #91a2f0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .header-link:hover,
+  .header-link:focus-visible {
+    transform: scale(1.03);
+  }
+}
+
+#pfp {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+#pfp img {
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
+}
+
+/* Minimal CSS Reset */
+*,
+*::before,
+*::after {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
