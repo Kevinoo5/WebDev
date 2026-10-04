@@ -38,6 +38,18 @@
   background-color: #cfbcba;
 }
 
+.logincontent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.middlebox{
+  width: 50%;
+  background-color: #e2d6d5;
+  text-align: center;
+
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .header-link:hover,
   .header-link:focus-visible {
