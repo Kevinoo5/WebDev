@@ -2,7 +2,10 @@
   display: flex;
   width: auto;
   height: 6rem;
-  background-color: aqua;
+  background-color: #e2d6d5;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
 }
 
 .header-links {
@@ -22,6 +25,8 @@
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 10px;
+  text-decoration: none;
+  color: #2a1f1d;
   transition:
     transform 0.5s ease,
     filter 0.5s ease,
@@ -30,7 +35,7 @@
 
 .header-link:hover,
 .header-link:focus-visible {
-  background-color: #91a2f0;
+  background-color: #cfbcba;
 }
 
 @media (prefers-reduced-motion: no-preference) {
