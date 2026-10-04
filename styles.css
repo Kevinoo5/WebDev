@@ -46,6 +46,7 @@
 }
 
 .middlebox{
+  padding: 10px;
   width: 40%;
   background-color: #e2d6d5;
   text-align: center;
@@ -66,6 +67,20 @@
   .header-link:focus-visible {
     transform: scale(1.03);
   }
+}
+
+.rida{
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+form > div {
+  margin-bottom: 20px;
+}
+
+form > div:last-child {
+  margin-bottom: 0;
 }
 
 #pfp {
