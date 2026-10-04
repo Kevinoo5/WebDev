@@ -91,6 +91,18 @@ form > div:last-child {
   margin-bottom: 0;
 }
 
+form > input{
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+form > input:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
 #pfp {
   display: flex;
   align-items: center;
