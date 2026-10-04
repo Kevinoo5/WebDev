@@ -159,6 +159,10 @@ main {
   word-wrap: break-word;
 }
 
+.post + .post {
+  border-top: 3px solid #cfbcba;
+}
+
 .like {
   padding: 2px;
 }
