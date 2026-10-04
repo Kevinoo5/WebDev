@@ -69,14 +69,22 @@
   }
 }
 
+textarea{
+  flex: 1 1 100px;
+  width: 100%;
+  min-width: 0;
+}
+
 .rida {
   display: flex;
   align-items: flex-start;
   gap: 8px;
+  flex-wrap: wrap;
 }
 
 form > div {
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 form > div:last-child {
