@@ -38,11 +38,12 @@
   background-color: #cfbcba;
 }
 
-.logincontent{
+.pagecontent{
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .middlebox{
   width: 50%;
   background-color: #e2d6d5;
