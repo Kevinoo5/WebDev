@@ -39,17 +39,27 @@
 }
 
 .pagecontent{
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .middlebox{
-  width: 50%;
+  width: 40%;
   background-color: #e2d6d5;
   text-align: center;
-
+  border-radius: 10px;
 }
+
+  .button {
+    background-color: rgb(11, 64, 117);
+    color: white;
+    padding: 4px 10px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+  }
 
 @media (prefers-reduced-motion: no-preference) {
   .header-link:hover,
