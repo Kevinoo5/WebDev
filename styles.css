@@ -70,6 +70,29 @@
   height: 5rem;
 }
 
+main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  margin: 10px;
+  column-gap: 20px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.main-layout > div {
+  background-color: #f5f0f0;
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+}
+
 /* Minimal CSS Reset */
 *,
 *::before,
