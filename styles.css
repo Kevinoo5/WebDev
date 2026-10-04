@@ -38,14 +38,14 @@
   background-color: #cfbcba;
 }
 
-.pagecontent{
+.pagecontent {
   margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.middlebox{
+.middlebox {
   padding: 10px;
   width: 40%;
   background-color: #e2d6d5;
@@ -69,7 +69,7 @@
   }
 }
 
-.rida{
+.rida {
   display: flex;
   align-items: flex-start;
   gap: 8px;
