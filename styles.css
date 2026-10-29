@@ -62,6 +62,44 @@
   cursor: pointer;
 }
 
+/** dropdown starts here**/
+.dropdown {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  position: relative;
+}
+
+.dropbutton {
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: none;
+  font-size: 12px;
+  background-color: #e2d6d5;
+  top: 100%;
+  right: 0;
+}
+
+.show {display: block;}
+
 h1 {
   font-size: clamp(1rem, 3vw, 3rem);
 }
@@ -121,6 +159,7 @@ form > input:last-child {
   border-radius: 100%;
   width: 5rem;
   height: 5rem;
+  object-fit: cover;
 }
 
 main {
