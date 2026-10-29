@@ -1,134 +1,104 @@
 [
   {
-    "post_id": 1,
-    "author": {
-      "name": "CheeseLover99",
-      "username": "@cheesefan"
+    "media": {
+      "alt_text": "A large wooden board piled high with various artisan cheeses.",
+      "reference": "https://cdn.example.com/images/posts/artisan_cheese_board.jpg"
     },
-    "creation_time": "2026-09-01T12:00:00Z",
+    "author": {
+      "name": "CheeseLover99"
+    },
     "content": "I LOVE CHEEEEEEEEEEEESE!! 🧀🧀🧀🧀",
-    "media": {
-      "type": "photo",
-      "reference": "https://cdn.example.com/images/posts/artisan_cheese_board.jpg",
-      "alt_text": "A large wooden board piled high with various artisan cheeses."
-    }
+    "post_id": 1,
+    "creation_time": "2026-09-01T12:00:00Z"
   },
   {
-    "post_id": 2,
+    "media": null,
     "author": {
-      "name": "Anonymous",
-      "username": "@stuck_in_well"
+      "name": "Anonymous"
     },
-    "creation_time": "2026-08-13T16:45:00Z",
     "content": "I am stuck in a well, please let me out 👺",
-    "media": null
+    "post_id": 2,
+    "creation_time": "2026-08-13T16:45:00Z"
   },
   {
-    "post_id": 3,
-    "author": {
-      "name": "Lucky Luke",
-      "username": "@high_roller"
+    "media": {
+      "alt_text": "Stack of colorful casino chips on a green felt table.",
+      "reference": "https://cdn.example.com/images/posts/casino_chips.jpg"
     },
-    "creation_time": "2026-06-17T20:10:00Z",
+    "author": {
+      "name": "Lucky Luke"
+    },
     "content": "Let's go gambling! 🤑🤑🤑",
-    "media": {
-      "type": "photo",
-      "reference": "https://cdn.example.com/images/posts/casino_chips.jpg",
-      "alt_text": "Stack of colorful casino chips on a green felt table."
-    }
+    "post_id": 3,
+    "creation_time": "2026-06-17T20:10:00Z"
   },
   {
-    "post_id": 4,
+    "media": null,
     "author": {
-      "name": "Confused Student",
-      "username": "@cs_student_2010"
+      "name": "Confused Student"
     },
-    "creation_time": "2010-03-31T09:15:00Z",
     "content": "Anyone knows in which room the lab is today?",
-    "media": null
+    "post_id": 4,
+    "creation_time": "2010-03-31T09:15:00Z"
   },
   {
-    "post_id": 5,
+    "media": null,
     "author": {
-      "name": "Gregorian Time Traveler",
-      "username": "@time_traveler_1582"
+      "name": "Gregorian Time Traveler"
     },
-    "creation_time": "1582-12-24T22:00:00Z",
     "content": "Sleep time! 🛏️😴😴",
-    "media": {
-      "type": "photo",
-      "reference": "https://cdn.example.com/images/posts/vintage_bedchamber.jpg",
-      "alt_text": "A rustic 16th-century wooden four-poster bed."
-    }
+    "post_id": 5,
+    "creation_time": "1582-12-24T22:00:00Z"
   },
   {
-    "post_id": 6,
+    "media": null,
     "author": {
-      "name": "Elena Rostova",
-      "username": "@elena_dev"
+      "name": "Elena Rostova"
     },
-    "creation_time": "2026-10-25T14:32:00Z",
     "content": "Just deployed my first microservice using Rust! The performance gains are incredible. 🚀",
-    "media": {
-      "type": "photo",
-      "reference": "https://cdn.example.com/images/posts/rust_dashboard_01.png",
-      "alt_text": "Screenshot of terminal and performance dashboard."
-    }
+    "post_id": 6,
+    "creation_time": "2026-10-25T14:32:00Z"
   },
   {
-    "post_id": 7,
-    "author": {
-      "name": "Marcus Chen",
-      "username": "@mchen_photo"
+    "media": {
+      "alt_text": "Vibrant orange and yellow leaves glowing under sunset light.",
+      "reference": "https://cdn.example.com/images/posts/central_park_autumn.jpg"
     },
-    "creation_time": "2026-10-25T18:05:22Z",
+    "author": {
+      "name": "Marcus Chen"
+    },
     "content": "Caught the golden hour light hitting the autumn leaves in Central Park today. Nature's color palette is unmatched.",
-    "media": {
-      "type": "photo",
-      "reference": "https://cdn.example.com/images/posts/central_park_autumn.jpg",
-      "alt_text": "Vibrant orange and yellow leaves glowing under sunset light."
-    }
+    "post_id": 7,
+    "creation_time": "2026-10-25T18:05:22Z"
   },
   {
-    "post_id": 8,
-    "author": {
-      "name": "Liam Vance",
-      "username": "@liam_cooks"
+    "media": {
+      "alt_text": "A freshly baked artisan sourdough loaf sliced open.",
+      "reference": "https://cdn.example.com/images/posts/sourdough_loaf.jpg"
     },
-    "creation_time": "2026-10-26T09:45:10Z",
+    "author": {
+      "name": "Liam Vance"
+    },
     "content": "Sourdough Sunday batch #12. Finally got the ear and open crumb structure I've been chasing for months.",
-    "media": {
-      "type": "photo",
-      "reference": "https://cdn.example.com/images/posts/sourdough_loaf.jpg",
-      "alt_text": "A freshly baked artisan sourdough loaf sliced open."
-    }
+    "post_id": 8,
+    "creation_time": "2026-10-26T09:45:10Z"
   },
   {
-    "post_id": 9,
+    "media": null,
     "author": {
-      "name": "Kato Hiroshi",
-      "username": "@kato_tokyo"
+      "name": "Kato Hiroshi"
     },
-    "creation_time": "2026-10-26T10:40:55Z",
     "content": "Quiet morning walk through Yanaka district. Tokyo's backstreets always offer a peaceful contrast to the neon lights.",
-    "media": {
-      "type": "photo",
-      "reference": "https://cdn.example.com/images/posts/tokyo_alley.jpg",
-      "alt_text": "Narrow traditional street in Tokyo lined with potted plants."
-    }
+    "post_id": 9,
+    "creation_time": "2026-10-26T10:40:55Z"
   },
   {
-    "post_id": 10,
+    "media": null,
     "author": {
-      "name": "Maya Lin",
-      "username": "@maya_astronomy"
+      "name": "Maya Lin"
     },
-    "creation_time": "2026-10-26T10:55:04Z",
     "content": "Set up the star tracker last night. Captured the Orion Nebula away from city light pollution.",
-    "media": {
-      "type": "photo",
-      "reference": "https://cdn.example.com/images/posts/orion_nebula.jpg",
-      "alt_text": "Deep space photo showing pink and purple gas clouds of the Orion Nebula."
-    }
+    "post_id": 10,
+    "creation_time": "2026-10-26T10:55:04Z"
   }
 ]

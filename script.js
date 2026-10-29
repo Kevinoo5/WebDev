@@ -1,5 +1,6 @@
 async function getData() {
-  const url = "https://api.npoint.io/984c4547167dd9d93396";
+  //const url = "https://api.npoint.io/984c4547167dd9d93396";
+  const url = "posts.json";
   try {
     const response = await fetch(url);
     if (!response.ok) {
