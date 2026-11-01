@@ -1,5 +1,5 @@
 async function getData() {
-  //const url = "https://api.npoint.io/984c4547167dd9d93396";
+  //const url = "https://api.npoint.io/b103f72f05922a847c6b";
   const url = "posts.json";
   try {
     const response = await fetch(url);
@@ -45,23 +45,25 @@ function createpost(postjson) {
   like.type="button";
   like.textContent="👍";
 
-  post.append(head, content);
+  post.append(head);
 
   if (postjson.media) {
-    const meedia = getMeedia(postjson.media);
+    const meedia = getMedia(postjson.media);
     if (meedia) post.append(meedia);
   }
+  post.append(content)
 
   post.append(like);
 
   return post;
 }
 
-function getMeedia(media) {
+function getMedia(media) {
     const pic = document.createElement("img");
     pic.src = media.reference;
     pic.alt = media.alt_text || "";
     pic.loading = "lazy";
+    pic.className="post-img"
     return pic;
 }
 
