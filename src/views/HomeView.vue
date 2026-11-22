@@ -9,6 +9,7 @@
             :key="post.post_id"
             :post="post"
         />
+        <button class="reset-likes" @click="resetLikes">Reset likes</button>
         </section>
         <div></div>
       </main>
@@ -20,6 +21,7 @@
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import Post from "@/components/Post.vue";
+import { mapMutations } from 'vuex'
 import {mapState} from "vuex";
 
 export default {
@@ -31,6 +33,9 @@ export default {
     Post,
     Footer,
     Header,
+  },
+  methods: {
+    ...mapMutations(['resetLikes'])
   }
 }
 </script>

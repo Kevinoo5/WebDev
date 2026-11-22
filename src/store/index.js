@@ -128,6 +128,11 @@ export default createStore({
             if (post) {
                 post.likes++
             }
+        },
+        resetLikes(state){
+            for (const post of state.posts){
+                post.likes=0;
+            }
         }
     },
     actions: {
