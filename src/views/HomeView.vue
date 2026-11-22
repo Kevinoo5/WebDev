@@ -9,7 +9,7 @@
             :key="post.post_id"
             :post="post"
         />
-        <button class="reset-likes" @click="resetLikes">Reset likes</button>
+        <button class="button" @click="resetLikes">Reset likes</button>
         </section>
         <div></div>
       </main>

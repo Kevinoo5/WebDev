@@ -52,6 +52,7 @@
     border-radius: 10px;
 }
 
+
 .button {
     background-color: rgb(11, 64, 117);
     color: white;
@@ -59,6 +60,10 @@
     text-align: center;
     display: inline-block;
     cursor: pointer;
+}
+
+.posts > .button {
+    align-self: center;
 }
 
 /** dropdown starts here**/
