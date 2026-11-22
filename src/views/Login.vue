@@ -3,8 +3,9 @@
     <Header />
     <div class="pagecontent">
       <div class="middlebox">
-        <form @submit.prevent="handleSubmit">
-          Email
+        <form @submit.prevent="handleSubmit" class="signup-form">
+          <div class="form-row">
+            <label for="email">Email</label>
           <input
             type="email"
             name="email"
@@ -12,8 +13,10 @@
             placeholder="Email"
             required
           >
+          </div>
           <br>
-          Password
+          <div class="form-row">
+            <label for="password">Password</label>
           <input
             type="password"
             name="password"
@@ -22,6 +25,7 @@
             v-model="password"
             required>
           <br>
+          </div>
           <div v-if="validationMessage" class="error-message">
             {{ validationMessage }}
           </div>
