@@ -255,9 +255,15 @@ main {
 .like {
     padding: 2px;
 }
+.login,
+.home {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 footer {
-    margin-top: 25px;
+    margin-top: auto;
     display: flex;
     background-color: #e2d6d5;
     justify-content: center;
