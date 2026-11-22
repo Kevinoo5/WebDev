@@ -3,10 +3,8 @@
     <Header />
     <div class="pagecontent">
       <div class="middlebox">
-        <h1>Welcome to PostIt</h1>
-        <a href="">Create an account</a>
-        <p>or<br>Please log in</p>
-        <form action="index.html" method="post">
+        <form @submit.prevent="handleSubmit">
+          Email
           <input
             type="email"
             name="email"
@@ -15,16 +13,20 @@
             required
           >
           <br>
+          Password
           <input
             type="password"
             name="password"
             id="password"
             placeholder="Password"
+            v-model="password"
             required>
           <br>
-          <button class="button" type="submit">Log in</button>
+          <div v-if="validationMessage" class="error-message">
+            {{ validationMessage }}
+          </div>
+          <button class="button" type="submit">Signup</button>
         </form>
-        <a href="">Forgot password?</a>
       </div>
     </div>
     <Footer />
@@ -36,10 +38,60 @@ import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
-  name: 'Login',
+  name: "Signup",
   components: {
     Footer,
     Header,
-  }
-}
+  },
+  data() {
+    return {
+      email: "",
+      password: "",
+      submitted: false,
+    };
+  },
+  computed: {
+    failedPasswordChecks() {
+      const pwd = this.password;
+      const errors = [];
+      
+      if (!(pwd.length >= 8 && pwd.length < 15)) {
+        errors.push("Password must be at least 8 characters and less than 15 characters");
+      }
+      if (!/[A-Z]/.test(pwd)) {
+        errors.push("Password at least one uppercase alphabet character");
+      }
+      const lowercaseMatches = pwd.match(/[a-z]/g);
+      if (!lowercaseMatches || lowercaseMatches.length < 2) {
+        errors.push("Password at least two lowercase alphabet characters");
+      }
+      if (!/[0-9]/.test(pwd)) {
+        errors.push("Password at least one numeric value");
+      }
+      if (!/^[A-Z]/.test(pwd)) {
+        errors.push("Password should start with an uppercase letter");
+      }
+      if (!pwd.includes("_")) {
+        errors.push('Password should include the character "_"');
+      }
+
+      return errors;
+    },
+    validationMessage() {
+      if (!this.submitted || this.failedPasswordChecks.length === 0) {
+        return "";
+      }
+      return `Password is not valid - ${this.failedPasswordChecks.join("; ")}`;
+    },
+  },
+  methods: {
+    handleSubmit() {
+      this.submitted = true;
+      if (this.failedPasswordChecks.length === 0) {
+        console.log("Valid signup");
+        this.$router.push("/");
+      }
+    },
+  },
+};
 </script>
