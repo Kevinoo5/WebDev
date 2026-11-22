@@ -12,9 +12,6 @@ import {mapState} from "vuex";
 
 export default {
   name: 'Login',
-  computed: {
-    ...mapState(["posts"]),
-  },
   components: {
     Footer,
     Header,
