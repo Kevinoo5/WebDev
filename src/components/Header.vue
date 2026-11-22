@@ -6,6 +6,10 @@ export default {
 
 <template>
   <header class="header">
+    <div class="header-links">
+        <RouterLink to="/"><a class="header-link">Main</a></RouterLink>
+        <RouterLink to="/login"><a class="header-link">Login</a></RouterLink>
+      </div>
     <div class="dropdown">
       <button class="dropbutton"><img src="pfp.jpg" alt="Profile"></button>
       <div id="dropDownMenu" class="dropdown-content">
