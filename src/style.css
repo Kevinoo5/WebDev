@@ -170,7 +170,6 @@ main {
 .main-layout {
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    margin: 10px;
     column-gap: 20px;
     overflow: hidden;
     height: 100%;

@@ -1,12 +1,16 @@
 <template>
   <div class="home">
     <Header />
-      <main id="posts" class="feed">
-        <Post
+      <main class="main-layout">
+        <div></div>
+        <section class="posts" id="posts" aria-label="Posts">
+          <Post
             v-for="post in posts"
             :key="post.post_id"
             :post="post"
         />
+        </section>
+        <div></div>
       </main>
     <Footer />
   </div>
